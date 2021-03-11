@@ -6,13 +6,6 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
-
-    QString szFile = qApp->applicationDirPath() + "/rtdb.ini";
-    RtdbHandle rtdbHandle = rtdb_CreateFromFile(szFile.toStdString().c_str());
-    if( rtdb_ConnectEx(rtdbHandle) )
-        qDebug()<<"in";
-    else
-        qDebug()<<"out";
 }
 
 
