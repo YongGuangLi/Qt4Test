@@ -1,7 +1,6 @@
 #ifndef DIALOG_H
 #define DIALOG_H
 
-#include "RtdbFun.h"
 
 #include <QDialog>
 #include <QDir>
